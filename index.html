@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="framework.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div id="pannel-1">
+        <div class="a-contain">
+
+            <form action="" id="myForm">
+                <div class="row">
+                    <div class="col-4 ">
+                        <p>Nome Cognome</p>
+                        <input type="text" placeholder="" name="nome-cognome" id="nome-cognome">
+                    </div>
+                    <div class="col-4">
+                        <p>Km da percorrere</p>
+                        <input type="text" placeholder="" name="Km" id="km">
+                    </div>
+                    <div class="col-4">
+                        <p>Fascia d'età</p>
+                        <select name="età" id="eta">
+                            <option value="">Minorenne</option>
+                            <option value="">Maggiorenne</option>
+                            <option value="">Over</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-offset-4">
+                        <div class="col-6">
+                            <button>Genera</button>
+                            <button>Annulla</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <h1>IL TUO BIGLIETTO</h1>
+    <div id="pannel-2">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+        <hr>
+        <form action="" id="myForm">
+            <div class="row">
+                <div class="col-4">
+                    <div id="grey-box">
+                        <h2>NOME PASSEGGERO</h2>
+                        <h2 id="nome-inserito">Nome</h2>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="col-3">
+                        <p> <strong>Offerta</strong> </p>
+                        <p id="offerta">offerta</p>
+                    </div>
+                    <div class="col-3">
+                        <p> <strong>carrozza</strong> </p>
+                        <p id="carrozza">num </p>
+                    </div>
+                    <div class="col-3">
+                        <p> <strong> Codice <br> CP</strong> </p>
+                        <p id="codice">codice</p>
+                    </div>
+                    <div class="col-3">
+                        <p> <strong>Costo <br> biglietto</strong> </p>
+                        <p id="prezzo">costo</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

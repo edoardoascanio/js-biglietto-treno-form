@@ -1,36 +1,34 @@
 window.addEventListener("load", function () {
+    var myForm = document.getElementById("myForm")
+    var submitBtn = document.querySelector("[type='submit'")
 
-    onWindowLoad()
+    myForm.addEventListener("submit", onSubmit)
+    myForm.addEventListener("reset", onSubmit)
+
 })
 
 
-function onWindowLoad() {
-    var myForm = document.getElementById("myForm");
+function onSubmit(event) {
+    event.preventDefault()
 
-    console.dir(myForm)
+    var form = event.currentTarget
+    var elements = form.elements
 
-    myForm.addEventListener("submit", function (event) {
-        var nomeElement = document.getElementById("nome-cognome")
-        var kmElement = document.getElementById("km")
-        var etaElement = document.getElementsById("eta")
+    console.log("nome = " + elements.nomeCognome.value);
+    console.log("Chilometri = " + elements.km.value);
+    console.log("età = " + elements.eta.value);
+}
 
-        event.preventDefault();
+function onReset (event){
+    event.preventDefault()
 
-        var form = event.currentTarget;
-        var formElements = form.elements;
+    var form = event.currentTarget
+    var elements = form.elements
 
-        var nome = formElements.nome.value;
-        var km = formElements.cognome.value;
-
-        nomeElement.innerHtml = "" ;
-        kmElement.innerHtml = "" ;
-        etaElement.innerHtml = "" ;
-    })
-
-    myForm.addEventListener("reset", function () {
-
-        console.log("reset")
-    })    
+    elements.nomeCognome.value = "";
+    elements.km.value = "";
+    elements.eta.value = "";
 
 }
+
 

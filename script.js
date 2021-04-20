@@ -1,11 +1,7 @@
-var nomeGognome = document.getElementById("nome-cognome")
-console.log(nomeGognome);
 
-var numeroChilometri = document.getElementById("km")
-console.log(numeroChilometri + "Km");
-
-var eta = document.getElementById("eta")
-console.log(eta);
+var nomeGognome 
+var numeroChilometri 
+var eta 
 
 var prezzoAlChilometro = (0.21);
 

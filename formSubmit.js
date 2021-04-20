@@ -17,9 +17,13 @@ function onSubmit(event) {
     console.log("nome = " + elements.nomeCognome.value);
     console.log("Chilometri = " + elements.km.value);
     console.log("età = " + elements.eta.value);
+
+    var nomeCognome = document.myForm.elements.nomeCognome.value;
+    document.getElementById("nomeInserito").innerHTML = + nomeCognome;
+
 }
 
-function onReset (event){
+function onReset(event) {
     event.preventDefault()
 
     var form = event.currentTarget
@@ -30,5 +34,6 @@ function onReset (event){
     elements.eta.value = "";
 
 }
+
 
 

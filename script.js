@@ -1,8 +1,9 @@
 
-var nomeGognome 
+var nomeCognome 
 var numeroChilometri 
 var eta 
-
+var minorenne
+var over65
 var prezzoAlChilometro = (0.21);
 
 var prezzoTotale = (numeroChilometri * prezzoAlChilometro);
@@ -14,20 +15,12 @@ if (Number.isNaN(numeroChilometri) || Number.isNaN(eta)) {
     alert("Inserire cifre numeriche")
 }
 
-if (eta < 18) {
+if (eta = minorenne) {
     var scontoMinorenni = ((prezzoTotale * 20) / 100);
     console.log("Sconto Minorenni" + scontoMinorenni + "£")
-    document.getElementById("sconto-18").innerHTML = "Sconto Minorenni" +
-        ('<em>' + scontoMinorenni + '</em>') + "£"
 }
 
-if (eta > 65) {
+if (eta = over65) {
     var scontoOver = ((prezzoTotale * 40) / 100);
     console.log("Sconto Over" + scontoOver + "£")
-    document.getElementById("sconto-over").innerHTML = "Sconto Over" + ('<em>' + scontoOver + '</em>') + "£"
-}
-
-if (eta > 145) {
-    alert("Inserire età valida")
-    console.log("Inserire età valida")
 }

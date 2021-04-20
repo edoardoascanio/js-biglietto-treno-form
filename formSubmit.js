@@ -21,6 +21,28 @@ function onSubmit(event) {
     var nomeCognome = document.myForm.elements.nomeCognome.value;
     document.getElementById("nomeInserito").innerHTML = + nomeCognome;
 
+    var numeroChilometri = document.myForm.elements.numeroChilometri.value;
+
+    var offerta = document.myForm.elements.offerta.value;
+    document.getElementById("offerta").innerHTML = + offerta;
+
+    var codiceBiglietto = Math.floor(Math.random() * 10000 - 1) + 90000;
+    document.getElementById("codice").innerHTML = + codiceBiglietto;
+
+    var numeroCarrozza = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("carrozza").innerHTML = + numeroCarrozza;
+
+    var prezzoAlChilometro = (0.21);
+
+    var prezzoTotale = (numeroChilometri * prezzoAlChilometro);
+
+    var prezzo = (Math.random() * 10);
+    prezzo.toFixed(2)
+   document.getElementById("prezzo").innerHTML = + prezzoTotale
+   
+
+
+
 }
 
 function onReset(event) {

@@ -35,7 +35,7 @@ body h1 {
 }
 
 .a-contain label{
-    text-align: center;
+    margin-left: 50px;
 }
 
 input, select{
